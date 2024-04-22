@@ -1,0 +1,71 @@
+.custom-movie-card {
+    padding: 1rem 1rem;
+    color: white;
+    display: grid;
+    max-width: 360px;
+    position: relative;
+}
+
+.custom-movie-card__poster {
+    width: 100%;
+    aspect-ratio: 2/3;
+}
+
+.custom-movie-card__title {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: .5rem;
+}
+
+.custom-movie-card__icon {
+    all: unset;
+    aspect-ratio: 1;
+    width: 35px;
+    height: 35px;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    z-index: 1; 
+    bottom: -20px;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(290deg); /* Justera färgen här */
+}
+
+.custom-movie-card__icon:hover {
+    scale: 1.1;
+}
+
+.custom-movie-card__icon--add-to-favorites {
+    background-color: bisque;
+    background-image: url(../../assets/favorit1.svg);
+    top: 15%;
+    right: 15%;
+}
+
+.custom-movie-card__icon--in-favorites {
+    background-color: bisque;
+    background-image: url(../../assets/favorit2.svg);
+    top: 15%;
+    right: 15%;
+    transform: rotateY(360deg);
+}
+
+.custom-movie-card__icon--add-to-watchlist {
+    background-color: bisque;
+    left: 15%;
+    top: 15%;
+    background-image: url(../../assets/watchlist-1.svg);
+}
+
+.custom-movie-card__icon--in-watchlist {
+    left: 15%;
+    background-color: bisque;
+    top: 15%;
+    background-image: url(../../assets/watchlist-2.svg);
+    transform: rotateY(360deg);
+}

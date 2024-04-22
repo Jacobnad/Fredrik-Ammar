@@ -1,0 +1,21 @@
+.custom-main-section {
+    max-width: 1200px;
+    margin-top: 5.5rem;  
+    padding: 5rem 2rem;  
+    text-align: center;  
+}
+
+.custom-main-title {
+    color: white;
+    margin-bottom: 2rem;
+    position: relative; 
+}
+
+
+
+.custom-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 260px));
+    gap: 1.5rem;
+    justify-content: center; 
+}
